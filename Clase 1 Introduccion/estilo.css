@@ -1,0 +1,43 @@
+p{
+    color: red;
+}
+
+#primerParrafo{
+    background-color: aqua;
+}
+
+div p{
+    background-color: yellow;
+}
+
+.CambiarColorLetra{
+    color: brown;
+}
+
+
+tr, td, th{
+    border:2px solid black;
+   
+}
+
+td{
+    /* padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 5px; */
+/* 
+    padding afecta a todos los puntos cardinales  */
+    text-align: center;
+    padding: 10px 5px 20px 10px; 
+    /* Va de arriba,derecha,abajo,izquierda */
+}
+table{
+    border-collapse: collapse;
+
+}
+
+li{
+    display: inline;
+    border: 2px solid black;
+    margin-left: 30px;
+}

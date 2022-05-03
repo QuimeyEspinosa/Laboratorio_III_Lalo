@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <form action="">
+
+        <h1>FORMULARIO</h1>
+        <label for="txtNombre"> Nombre</label>
+        <input id="txtNombre" type="text" name="nombreUsuario" placeholder="Ingrese su nombre">
+        
+        <label for="txtClave"> Clave</label>
+        <input id="Clave" type="password" name="clave" >
+        
+        <label for="txtClave"> Edad</label>
+        <input id="Clave" type="number" name="clave" required>
+        
+        <fieldset col-md-6>
+            <legend>FRUTAS</legend>
+            <select name="frutas" id="">
+                <option selected disabled value=""></option>
+            <option value="">manzana</option>
+            <option value="">pera</option>
+            <option value="">naranja</option>
+            <option value="">mandarina</option>
+            
+            </select>
+            
+        </fieldset>
+
+
+        <br>
+        <fieldset>
+            <legend>Deportes que hace</legend>
+            <input type="checkbox">Futbol
+            <input type="checkbox">Tenis
+            <input type="checkbox">Basquet
+            <input type="checkbox">Volley
+        </fieldset>
+
+        <br>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13118.595854604771!2d-58.40592325!3d-34.714032949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1649810233015!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qwpICNTK44Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <label> Masculino
+            <input type="radio" name="Sexo" id="">
+        </label>
+        <label> Femenino
+            <input type="radio" name="Sexo" id="">
+        </label>
+
+        <br>
+        <input type="submit" value="Traer info">
+
+    </form>
+
+    <button id="btn">Saludar</button>
+</body>
+</html>

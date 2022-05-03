@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>DOCUMENTO</title>
+    </head>
+    <body>
+        
+        
+        <script>
+
+            function saludar()
+            {
+                console.log("Hola");
+            }
+
+            function despedir()
+            {
+                console.log("Chau nos vemos");
+            }
+
+            const unaFuncion = despedir;
+            saludar();
+            unaFuncion();
+            
+
+            const llamadaFuncion = ()=>{
+                console.log("FAT ARROW");
+            }
+
+            //Funcion que retorna el string concatenando el paramentro
+            const llamadaAFuncion = n => "Chau" + n;
+
+            console.log(llamadaAFuncion("Lalito"));
+
+            //Interpolacion
+            //Adentro de las llaves se puede poner codigo js
+            const otraLLamada = (n,m)=>`Chau ${n} y ${m}`;
+            console.log(otraLLamada("Gonzalo","Eliana"));
+            //si le agrego mas valores a los parametros, no se rompe, o si 
+            //no le paso uno de los parametros, queda undefined
+
+            //Es lo mismo para definir un array
+            let numeros = new Array();
+            let numeros2 = [];
+
+            let numeros3 = new Array(1,2,3,4,5);
+            let numeros4 = [1,2,3,4,5];
+            
+            function informar(value)
+            {
+                console.log("informo " + value);
+            }
+
+            function Ejercutora(funcionARealizar)
+            {
+                funcionARealizar();
+            }
+
+            function ejecutoraConParametros(funcionARealizar,valor)
+            {
+                funcionARealizar(valor);
+            }
+
+            function ejecutoraParam2(funcionARealizar)
+            {
+                let valor= 45;
+                ejecutoraConParametros(funcionARealizar,valor);
+            }
+
+            //normal
+            informar(5);
+            ejecutoraConParametros(informar,100);
+            ejecutoraParam2(informar);
+
+
+            function teSumoLoQueMePases(a,b,...c)
+            {
+                let resultado = a + b;
+                //res operator
+                for(let i=0;i<c.length;i++)
+                {
+                    resultado += c[i];
+                }
+                return resultado;
+            }
+
+            console.log(teSumoLoQueMePases(1,2,3));
+            console.log(teSumoLoQueMePases(1,2,3,2,4,5,6,3));
+
+            console.log(teSumoLoQueMePases(1,2,3,123123,453,6));
+            //primer parametro es una funcion
+            // setTimeout(() => {
+            //     console.log("espero 5 segundos para escribir");
+            // }, 5000);
+
+            console.log("inicio");
+            //funcion asincronica, ejecuta los console log y despues ejecuta el setTimeOut
+            setTimeout(() => {
+                Ejercutora(saludar);
+            }, 5000);
+                
+            
+            console.log("fin");
+
+        </script>
+    </body>
+</html>
