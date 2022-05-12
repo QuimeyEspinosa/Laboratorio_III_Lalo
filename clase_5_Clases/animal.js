@@ -23,4 +23,7 @@ class Animal{
     saludar(){
         console.log("soy un animal de tipo " + this.tipo+" y mi sexo es "+this.sexo);
     }
+
+    
 }
+export default Animal;
